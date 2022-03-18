@@ -1,8 +1,17 @@
-exports.misFunciones = function(miArray){
+exports.calcularAlgo = function(unArreglo) {
     let suma = 0;
-    for(let i = 0;  i < miArray.length; i++){
-        suma += miArray[i];
+    for (let index = 0; index < unArreglo.length; index++) {
+        const element = unArreglo[index];
+        suma += element;
     }
-    console.log(suma);
+    return suma;
+}
+
+exports.calcularAlgoEjemplo = function(unArreglo) {
+    let suma = 0;
+    for (let index = 0; index < unArreglo.length; index++) {
+        const element = unArreglo[index];
+        suma += element;
+    }
     return suma;
 }
